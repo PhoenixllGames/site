@@ -37,6 +37,9 @@
 <script>
     $(document).ready(function() {
         document.getElementById('scr').style.minHeight = screen.height + "px";
+        if (screen.height < 1000) {
+            document.getElementById('scr').style.minHeight = 3000 + "px";
+        }
     });
 </script>
 

@@ -12,7 +12,7 @@ h2 {
 }
 
 body {
-    min-height: 100px;
+    min-height: 3000px;
 }
 
 header {
@@ -192,5 +192,8 @@ article p {
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    body {
+        max-height: 3000;
     }
 }
