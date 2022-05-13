@@ -21,16 +21,22 @@
 <body>
     <div id="header"></div>
     <article>
-        <p>Тут ты найдешь немного больше информации обо мне и моем контенте</p>
-        <div>
-            <p><a href="about.html">Обо мне</a></p>
-            <p><a href="pcinfo.html">Мой сэтап</a></p>
-            <p><a href="contact.html">Связь со мной</a></p>
-            <p><a href="donate.html">Если хотите поддержать</a></p>
-            <p><a href="other.html">Остальные ссылочки</a></p>
-        </div>
+        <h2>Тестовый временный заголовок</h2>
+        <p>Тестовый временный текст огроооооооооооооооооооооооооооооооомного размера</p>
     </article>
     <div id="footer"></div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0)
+        });
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function() {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

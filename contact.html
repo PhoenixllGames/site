@@ -7,20 +7,34 @@
     <meta name="author" content="PhoenixllGamer">
     <meta name="keywoards" content="youtube, phoenixllgamer, игры, видео, ютубер">
     <title>Контакты</title>
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-    <header>
-
-        <hr>
-    </header>
+    <div id="header"></div>
     <article>
-
+        <h2>Тестовый временный заголовок</h2>
+        <p>Тестовый временный текст огроооооооооооооооооооооооооооооооомного размера</p>
     </article>
-    <footer>
-        <hr>
+    <div id="footer"></div>
 
-    </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector('header')
+            header.classList.toggle('sticky', window.scrollY > 0)
+        });
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function() {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
