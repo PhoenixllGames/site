@@ -18,7 +18,7 @@
     </script>
 </head>
 
-<body>
+<body id="scr">
     <div id="header"></div>
     <article>
         <h2>Тестовый временный заголовок</h2>
@@ -30,8 +30,14 @@
         window.addEventListener("scroll", function() {
             const header = document.querySelector('header')
             header.classList.toggle('sticky', window.scrollY > 0)
+
         });
     </script>
 </body>
+<script>
+    $(document).ready(function() {
+        document.getElementById('scr').style.minHeight = screen.height + "px";
+    });
+</script>
 
 </html>
