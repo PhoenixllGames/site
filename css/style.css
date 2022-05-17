@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+::-webkit-scrollbar {
+    width: 5px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f1f2170;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100px;
+    background: #1f1f21;
+    border-radius: 8px;
+}
+
 a {
     font-family: 'Jura', sans-serif;
 }
@@ -25,7 +40,8 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transition: 1s;
+    transition: 0.8s;
+    z-index: 100;
 }
 
 .menu {
@@ -116,7 +132,7 @@ nav ul li a:hover {
 }
 
 article {
-    margin-top: 100px;
+    margin-top: 20%;
     padding: 100px;
 }
 
@@ -128,7 +144,39 @@ article p {
     font-size: 1.2em;
 }
 
-@media (max-width: 991px) {
+.fr-ctr {
+    border-color: #1f1f21;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-row-gap: 1em;
+    grid-auto-rows: minmax(400px, auto);
+}
+
+.wrapper .video {
+    background: #1f1f21;
+}
+
+.wrapper .textwr {
+    background: #1f1f21;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.wrapper .textwr h2 {
+    color: rgb(168, 168, 168);
+    margin: 0.5em;
+}
+
+.wrapper .textwr p {
+    color: rgb(168, 168, 168);
+    margin: 1em;
+}
+
+@media (max-width: 1330px) {
     article {
         padding: 50px;
         padding-top: 70px;
@@ -195,5 +243,11 @@ article p {
     }
     body {
         max-height: 3000;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 40%;
+        grid-row-gap: 1em;
+        grid-auto-rows: minmax(200px, auto);
     }
 }
