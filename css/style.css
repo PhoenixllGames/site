@@ -363,6 +363,18 @@ article p {
     .wrapper .textwr p {
         font-size: 1vw;
     }
+    .wrapper.l .textwr h2 {
+        font-size: 1vw;
+    }
+    .wrapper.l .textwr p {
+        font-size: 1vw;
+    }
+    .wrapper.r .textwr h2 {
+        font-size: 1vw;
+    }
+    .wrapper.r .textwr p {
+        font-size: 1vw;
+    }
     .wrapper .textwr {
         padding: 10px;
     }
