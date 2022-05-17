@@ -285,6 +285,14 @@ article p {
     margin-left: 30%;
 }
 
+.wrapper.l .hide {
+    text-indent: -9999px
+}
+
+.wrapper.r .hide {
+    text-indent: -9999px
+}
+
 .sizer {
     padding: 10%;
 }
@@ -354,25 +362,10 @@ article p {
         background-repeat: no-repeat;
         background-position: center;
     }
-    .wrapper {
-        grid-auto-rows: minmax(200px, auto);
-    }
     .wrapper .textwr h2 {
         font-size: 1vw;
     }
     .wrapper .textwr p {
-        font-size: 1vw;
-    }
-    .wrapper.l .textwr h2 {
-        font-size: 1vw;
-    }
-    .wrapper.l .textwr p {
-        font-size: 1vw;
-    }
-    .wrapper.r .textwr h2 {
-        font-size: 1vw;
-    }
-    .wrapper.r .textwr p {
         font-size: 1vw;
     }
     .wrapper .textwr {
