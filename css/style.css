@@ -289,7 +289,7 @@ article p {
     padding: 10%;
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1330px) {
     article {
         padding: 50px;
         padding-top: 55%;
