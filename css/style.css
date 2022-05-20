@@ -26,6 +26,11 @@ h2 {
     font-family: 'Jura', sans-serif;
 }
 
+td {
+    font-family: 'Jura', sans-serif;
+    color: rgb(168, 168, 168);
+}
+
 header {
     position: fixed;
     top: 0;
@@ -299,6 +304,26 @@ article p {
     text-indent: -9999px
 }
 
+table,
+td {
+    border: 1px solid rgba(168, 168, 168, 0.6);
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.wrapper.l .textwr.schh {
+    padding: 10%;
+}
+
 .sizer {
     padding: 10%;
 }
@@ -391,5 +416,15 @@ article p {
     }
     .form {
         margin-left: 22.5%;
+    }
+    tr {
+        height: 10px;
+    }
+    td {
+        font-size: 1vw;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-right: 12.5px;
+        padding-left: 12.5px;
     }
 }
