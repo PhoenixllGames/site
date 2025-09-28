@@ -1,0 +1,45 @@
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom 0.3s;
+    position: relative;
+}
+
+.tab-button:hover {
+    color: #ffffff;
+}
+
+.tab-button.active {
+    color: #ffffff;
+    border-bottom: 2px solid #bb86fc;
+    bottom: -1px;
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.tab-content.active {
+    max-height: 5000px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#news-content,
+#guides-content {
+    padding-top: 20px;
+}

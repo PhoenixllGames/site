@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta property="og:title" content="Главная">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PhoenixGamer.org">
+    <meta property="og:url" content="http://www.phoenixgamer.org/index.html">
+    <meta property="og:description" content="Страничка YouTube канала PhoenixllGamer">
+    <meta property="og:image" content="img/index/logo.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta charset="UTF-8">
+    <meta name="description" content="Страничка YouTube канала PhoenixllGamer">
+    <meta name="author" content="PhoenixllGamer">
+    <meta name="keywords" content="адк, league of legends, youtube, phoenix gamer, phoenixllgamer, игры, видео, ютубер, главная">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="autoplay=(self), encrypted-media=(self), accelerometer=(self), gyroscope=(self), picture-in-picture=(self), clipboard-write=(self)">
+    <title>Мой Сайт</title>
+    <link rel="icon" href="img/index/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/instyle.css">
+</head>
+<body>
+    <header id="header-placeholder"></header>
+
+    <main>
+        <section id="carousel-section">
+            <h2>Последние Видео</h2>
+            <div class="carousel-container">
+                <div id="video-carousel" class="carousel">
+                    <!-- Video items will be added via JS -->
+                </div>
+                <div class="carousel-controls">
+                    <div class="carousel-dots"></div>
+                    <button id="carousel-play-pause" class="carousel-play-pause">❚❚</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tabs-section">
+            <div class="tabs">
+                <button class="tab-button active" data-tab="news">Новости</button>
+                <button class="tab-button" data-tab="guides">Гайды</button>
+            </div>
+            <div id="news-content" class="tab-content active">
+                <!-- News items will be added via JS -->
+            </div>
+            <div id="guides-content" class="tab-content">
+                <!-- Guides items will be added via JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <iframe id="video-iframe" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
