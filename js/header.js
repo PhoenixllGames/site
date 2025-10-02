@@ -30,4 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const newPath = window.location.pathname.replace(/\.html$/, '');
         history.replaceState(null, '', newPath);
     }
+    // Normalize trailing '/index' to '/'
+    if (/\/index$/.test(window.location.pathname)) {
+        const newPath = window.location.pathname.replace(/\/index$/, '/');
+        history.replaceState(null, '', newPath);
+    }
 });
