@@ -329,6 +329,9 @@ footer {
     opacity: 0;
     animation: slideInUp 0.8s ease-out 0.8s forwards;
     margin-top: auto; 
+    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 @keyframes slideInUp {
@@ -381,4 +384,88 @@ footer p {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 16px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #1e1e1e;
+        padding: 16px 0;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 100;
+    }
+
+    main {
+        padding: 16px 8px;
+    }
+
+    .news-section {
+        padding: 16px;
+    }
+
+    .news-section h2 {
+        font-size: 20px;
+    }
+
+    .news-text {
+        font-size: 14px;
+    }
+
+    .news-video-wrapper {
+        max-width: 100%;
+    }
+
+    .news-video {
+        height: 200px;
+    }
+
+    footer {
+        padding: 16px;
+        width: auto;
+    }
+
+    #game-search {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    main {
+        max-width: 1400px;
+    }
+
+    .news-video-wrapper {
+        max-width: 1000px;
+    }
+
+    .news-video {
+        height: 200px;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
 }
