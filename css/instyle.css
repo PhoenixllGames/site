@@ -43,3 +43,7 @@
 #guides-content {
     padding-top: 20px;
 }
+
+#guides-content {
+    display: none;
+}
