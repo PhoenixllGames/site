@@ -73,7 +73,6 @@ site/
 ## 📞 Контакты
 
 - **YouTube**: [PhoenixllGamer](https://www.youtube.com/@PhoenixllGamer)
-- **Email**: jshsh6@gmail.com
 - **GitHub**: [PhoenixllGames](https://github.com/PhoenixllGames)
 
 ## 📄 Лицензия
